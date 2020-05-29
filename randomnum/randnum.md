@@ -36,7 +36,7 @@ DS5 坂田誠也
 
 スライドはmarkdown形式でGitHubで管理してます。
 typoとか誤りの報告のPR歓迎!
-[スライド](https://github.com/kanade0404/ltslide/blob/master/randomnum/randnum.md)
+[https://github.com/kanade0404/ltslide/blob/master/randomnum/randnum.md](https://github.com/kanade0404/ltslide/blob/master/randomnum/randnum.md)
 
 ---
 
