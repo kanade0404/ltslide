@@ -37,11 +37,11 @@ TU 坂田誠也
 
 ## 自己紹介
 
-坂田誠也
+坂田誠也(28歳エンジニア歴3年ちょっと)
 
 ### 技術的なこと
 
-- だいたいなんでもやってる
+- 一応サーバサイドエンジニアだけどだいたいなんでもやってる
 - 最近はTypeScript+GCP
 
 ### 技術的じゃないこと
@@ -77,6 +77,7 @@ Rust自体の学習コストが高め&普段意識しづらい内容が多めな
 
 - Rustの紹介
 - 機能・特徴
+- Rust製ソフトウェア
 
 ---
 
@@ -110,8 +111,6 @@ Rust自体の学習コストが高め&普段意識しづらい内容が多めな
 
 ---
 
-## Rustとは
-
 ### 機能・特徴
 
 - 所有権・借用・lifetimeによるGCなしの自動メモリ管理
@@ -122,7 +121,6 @@ Rust自体の学習コストが高め&普段意識しづらい内容が多めな
 - マクロ
 - 言語レベルで組み込まれているテスト機能
 - 優秀なパケージマネージャー
-- WebAssembly対応
 - 環境構築がとても簡単([コマンド](https://www.rust-lang.org/tools/install)コピペして実行で終わり)
 
 ---
@@ -310,6 +308,7 @@ fn print_favorite_anime(anime: String) -> String {
 
 - 参照は元の所有者のライフタイムよりも長く生存できない
 - 不変参照はいくつでも参照を渡すことができるが可変参照は一度に一つ
+---
 
 ```rust
 fn main() {
@@ -342,6 +341,8 @@ Rust は trait で様々な型に共通のメソッドを実装できるよう�
 #### trait と dyn
 
 Rustはデフォルトでコンパイル時に実行する処理を解決（静的ディスパッチ）しますが、実行時までインスタンスが確定しない処理では動的ディスパッチも使うことができる
+
+---
 
 ```rust
 trait UmaMusume {
@@ -409,11 +410,11 @@ fn main() {
 
 ---
 
-## 開発パフォーマンス
-
 ### エディタ
 
 VSCode or CLion
+
+---
 
 ### マクロ
 
@@ -431,29 +432,40 @@ vec!     // ベクター型の宣言
 
 ---
 
----
-
 ## お品書き
 
 - 自己紹介
 - Rustとは
 - 実行速度
-- **開発パフォーマンス**
-- Rustのユースケース
+- 開発パフォーマンス
+- **Rustのユースケース**
 
 ---
 
 ## Rustのユースケース
 
+メモリ安全性・スレッド安全性と実行速度を生かして
+
 - CLI
 - ネットワーク
 - 組み込み
 
-メモリ安全性・スレッド安全性と実行速度を生かして
+で利用されることが多い
 
 [プロダクション利用事例](https://www.rust-lang.org/ja/production/users)
 
-### WebAssembly対応
+---
+
+### web server side
+
+最速のwebフレームワークであるC++のDragonに次ぐ速度の[actix-web](https://github.com/actix/actix-web)をはじめとしていくつかのフレームワークがある。
+
+[webフレームワーク比較](https://github.com/flosse/rust-web-framework-comparison)
+
+[AtCoder Problems](https://github.com/kenkoooo/AtCoderProblems/tree/master/atcoder-problems-backend)
+
+---
+### WebAssembly
 
 WebAssemblyに対応しているのでブラウザ上でも動作します。
 
@@ -467,14 +479,7 @@ FEフレームワークもある
 
 [yewstack/yew](https://github.com/yewstack/yew)
 
-### web
-
-最速のwebフレームワークであるC++のDragonに次ぐ速度の[actix-web](https://github.com/actix/actix-web)をはじめとしていくつかのフレームワークがある。
-
-[webフレームワーク比較](https://github.com/flosse/rust-web-framework-comparison)
-
-[AtCoder Problems](https://github.com/kenkoooo/AtCoderProblems/tree/master/atcoder-problems-backend)
-
+---
 
 ### 参考資料
 
