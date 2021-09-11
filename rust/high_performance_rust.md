@@ -9,7 +9,7 @@ size: 16:9
 color: black
 -->
 
-# ハイパフォーマンスプログラミング言語Rust
+# ハイパフォーマンスプログラミング言語 Rust
 
 TU 坂田誠也
 
@@ -18,31 +18,31 @@ TU 坂田誠也
 ## お品書き
 
 - 自己紹介
-- Rustとは
+- Rust とは
 - 実行速度
 - 開発パフォーマンス
-- Rustのユースケース
+- Rust のユースケース
 
 ---
 
 ## お品書き
 
 - **自己紹介**
-- Rustとは
+- Rust とは
 - 実行速度
 - 開発パフォーマンス
-- Rustのユースケース
+- Rust のユースケース
 
 ---
 
 ## 自己紹介
 
-坂田誠也(28歳エンジニア歴3年ちょっと)
+坂田誠也(28 歳エンジニア歴 3 年ちょっと)
 
 ### 技術的なこと
 
 - 一応サーバサイドエンジニアだけどだいたいなんでもやってる
-- 最近はTypeScript+GCP
+- 最近は TypeScript+GCP
 
 ### 技術的じゃないこと
 
@@ -52,68 +52,68 @@ TU 坂田誠也
 
 ## この発表の対象
 
-プログラミング経験n年のエンジニアonly
+プログラミング経験 n 年のエンジニア only
 
-Rust自体の学習コストが高め&普段意識しづらい内容が多めなので初学者だと難しいかもしれません。。。
+Rust 自体の学習コストが高め&普段意識しづらい内容が多めなので初学者だと難しいかもしれません。。。
 （それでも得られるものはあります）
 
-フロントエンド向けの話題あります(wasmの話)
+フロントエンド向けの話題あります(wasm の話)
 
 ---
 
 ## お品書き
 
 - 自己紹介
-- **Rustとは**
+- **Rust とは**
 - 実行速度
 - 開発パフォーマンス
-- Rustのユースケース
+- Rust のユースケース
 
 ---
 
-## Rustとは
+## Rust とは
 
 ![](rust-logo.png)
 
-- Rustの紹介
+- Rust の紹介
 - 機能・特徴
-- Rust製ソフトウェア
+- Rust 製ソフトウェア
 
 ---
 
-## Rustとは
+## Rust とは
 
 ![](rust-logo.png)
 
-- **Rustの紹介**
+- **Rust の紹介**
 - 機能・特徴
-- Rust製ソフトウェア
+- Rust 製ソフトウェア
 
 ---
 
-## Rustとは
+## Rust とは
 
-### Rustの紹介
+### Rust の紹介
 
-- Mozillaが支援しているオープンソースのシステムプログラミング言語 
-- 速度、並行性、安全性を保証するC言語とC++に替わるプログラミング言語を目指している
+- Mozilla が支援しているオープンソースのシステムプログラミング言語 
+- 速度、並行性、安全性を保証する C 言語と C++に替わるプログラミング言語を目指している
 - 強い型付けでマルチパラダイム
 
 ---
 
-## Rustとは
+## Rust とは
 
 ![](rust-logo.png)
 
-- Rustの紹介
+- Rust の紹介
 - **機能・特徴**
-- Rust製ソフトウェア
+- Rust 製ソフトウェア
 
 ---
 
 ### 機能・特徴
 
-- 所有権・借用・lifetimeによるGCなしの自動メモリ管理
+- 所有権・借用・lifetime による GC なしの自動メモリ管理
 - null safe
 - 総称性(generics)
 - パターンマッチ
@@ -129,15 +129,15 @@ Rust自体の学習コストが高め&普段意識しづらい内容が多めな
 
 ![](rust-logo.png)
 
-- Rustの紹介
+- Rust の紹介
 - 機能・特徴
-- **Rust製ソフトウェア**
+- **Rust 製ソフトウェア**
 
 ---
 
-## Rustとは
+## Rust とは
 
-### Rust製ソフトウェア
+### Rust 製ソフトウェア
 
 - Firefox
   - [Servo](https://servo.org)(HTML レンダリングエンジン)
@@ -153,20 +153,20 @@ Rust自体の学習コストが高め&普段意識しづらい内容が多めな
 ## お品書き
 
 - 自己紹介
-- Rustとは
+- Rust とは
 - **実行速度**
 - 開発パフォーマンス
-- Rustのユースケース
+- Rust のユースケース
 
 ---
 
 ## 実行速度
 
-Debianのプロジェクトが様々なプログラミング言語の実行速度を比較検証している。
+Debian のプロジェクトが様々なプログラミング言語の実行速度を比較検証している。
 
 [The Computer Language Benchmarks Game](https://benchmarksgame-team.pages.debian.net/benchmarksgame/which-programs-are-fastest.html)
 
-C++やCに次ぐ実行速度を誇る。
+C++や C に次ぐ実行速度を誇る。
 
 ---
 
@@ -181,7 +181,7 @@ A3. ゼロコスト抽象化によりランタイムシステムのオーバー�
 
 ### 機械語に直接コンパイル
 
-PythonやJavaは独自のVMを介してVM用の言語に変換される
+Python や Java は独自の VM を介して VM 用の言語に変換される
 
 :arrow_right: 速度面で不利になる。
 
@@ -189,11 +189,11 @@ PythonやJavaは独自のVMを介してVM用の言語に変換される
 
 ### 機械語に直接コンパイル
 
-C、C++やRustはコンパイル後の最終結果は機械語になり、VMを介さずに実行できるのでVMによる速度低下が起きない。
+C、C++や Rust はコンパイル後の最終結果は機械語になり、VM を介さずに実行できるので VM による速度低下が起きない。
 
 :arrow_right: 多くのプログラミング言語との速度の違い
 
-GCC(GNU Compiler Collection)やLLVM(Low Level Virtual Machime)などによってプロセッサに応じた機械語を生成する。（RustはLLVMを使用）
+GCC(GNU Compiler Collection)や LLVM(Low Level Virtual Machime)などによってプロセッサに応じた機械語を生成する。（Rust は LLVM を使用）
 
 ---
 
@@ -201,7 +201,7 @@ GCC(GNU Compiler Collection)やLLVM(Low Level Virtual Machime)などによって
 
 多くのプログラミング言語では、不要なメモリ領域を開放する処理を裏で逐一行う。
 
-CやC++は手動でメモリを確保・開放する必要があるのでガベージコレクションは便利
+C や C++は手動でメモリを確保・開放する必要があるのでガベージコレクションは便利
 
 ---
 
@@ -209,11 +209,11 @@ CやC++は手動でメモリを確保・開放する必要があるのでガベ�
 
 ガベージコレクションの処理はいつ実行されるか分からず、不要なメモリを開放するのに処理の停止時間が発生する。
 
-:arrow_right: これがGoとの速度の違い
+:arrow_right: これが Go との速度の違い
 
 じゃあどうやってメモリ管理を行っているのか
 
-:arrow_right: 所有権・借用とライフタイムによって第3の道を選択
+:arrow_right: 所有権・借用とライフタイムによって第 3 の道を選択
 
 ---
 
@@ -256,7 +256,7 @@ error[E0382]: borrow of moved value: `s`
 
 という規則に基づく。
 
-3行目の時点で所有権はsからs2に移動するため、sは値が破棄されるため値の参照・変更ができません。
+3 行目の時点で所有権は s から s2 に移動するため、s は値が破棄されるため値の参照・変更ができません。
 
 ---
 
@@ -308,6 +308,7 @@ fn print_favorite_anime(anime: String) -> String {
 
 - 参照は元の所有者のライフタイムよりも長く生存できない
 - 不変参照はいくつでも参照を渡すことができるが可変参照は一度に一つ
+
 ---
 
 ```rust
@@ -326,7 +327,7 @@ fn print_favorite_anime(anime: &String) {
 
 ### ゼロコスト抽象化
 
-端的に言えば**抽象化した処理を実行時の追加コストなしに動作すること**（元はC++）
+端的に言えば**抽象化した処理を実行時の追加コストなしに動作すること**（元は C++）
 
 #### trait と dyn
 
@@ -340,7 +341,7 @@ Rust は trait で様々な型に共通のメソッドを実装できるよう�
 
 #### trait と dyn
 
-Rustはデフォルトでコンパイル時に実行する処理を解決（静的ディスパッチ）しますが、実行時までインスタンスが確定しない処理では動的ディスパッチも使うことができる
+Rust はデフォルトでコンパイル時に実行する処理を解決（静的ディスパッチ）しますが、実行時までインスタンスが確定しない処理では動的ディスパッチも使うことができる
 
 ---
 
@@ -391,10 +392,10 @@ fn main() {
 ## お品書き
 
 - 自己紹介
-- Rustとは
+- Rust とは
 - 実行速度
 - **開発パフォーマンス**
-- Rustのユースケース
+- Rust のユースケース
 
 ---
 
@@ -405,8 +406,8 @@ fn main() {
 - rustup(ツールチェイン)
 - rustc(コンパイラ)
 - cargo(ビルドシステム&パッケージマネージャー)
-- rustfmt(標準formatter)
-- clippy(標準linter)
+- rustfmt(標準 formatter)
+- clippy(標準 linter)
 
 ---
 
@@ -435,14 +436,14 @@ vec!     // ベクター型の宣言
 ## お品書き
 
 - 自己紹介
-- Rustとは
+- Rust とは
 - 実行速度
 - 開発パフォーマンス
-- **Rustのユースケース**
+- **Rust のユースケース**
 
 ---
 
-## Rustのユースケース
+## Rust のユースケース
 
 メモリ安全性・スレッド安全性と実行速度を生かして
 
@@ -458,24 +459,25 @@ vec!     // ベクター型の宣言
 
 ### web server side
 
-最速のwebフレームワークであるC++のDragonに次ぐ速度の[actix-web](https://github.com/actix/actix-web)をはじめとしていくつかのフレームワークがある。
+最速の web フレームワークである C++の Dragon に次ぐ速度の[actix-web](https://github.com/actix/actix-web)をはじめとしていくつかのフレームワークがある。
 
-[webフレームワーク比較](https://github.com/flosse/rust-web-framework-comparison)
+[web フレームワーク比較](https://github.com/flosse/rust-web-framework-comparison)
 
 [AtCoder Problems](https://github.com/kenkoooo/AtCoderProblems/tree/master/atcoder-problems-backend)
 
 ---
+
 ### WebAssembly
 
-WebAssemblyに対応しているのでブラウザ上でも動作します。
+WebAssembly に対応しているのでブラウザ上でも動作します。
 
-GCが無いのでファイルサイズが小さくなります。([ベンチマーク参考](https://github.com/DenisKolodin/todomvc-perf-comparison/))
+GC が無いのでファイルサイズが小さくなります。([ベンチマーク参考](https://github.com/DenisKolodin/todomvc-perf-comparison/))
 
 [WebAssembly - Rust プログラミング言語](https://www.rust-lang.org/ja/what/wasm)
 
 [Rust から WebAssembly にコンパイルする - WebAssembly | MDN](https://developer.mozilla.org/ja/docs/WebAssembly/Rust_to_wasm)
 
-FEフレームワークもある
+FE フレームワークもある
 
 [yewstack/yew](https://github.com/yewstack/yew)
 
@@ -485,4 +487,4 @@ FEフレームワークもある
 
 [公式ドキュメント](https://doc.rust-jp.rs/book-ja/title-page.html)
 
-[実践Rustプログラミング入門](https://www.amazon.co.jp/dp/B08PF27TRZ/)
+[実践 Rust プログラミング入門](https://www.amazon.co.jp/dp/B08PF27TRZ/)
