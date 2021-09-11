@@ -1,0 +1,12 @@
+{
+  "name": "ltslide",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:kanade0404/ltslide.git",
+  "author": "kanade <melty0404@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@textlint/textlint-plugin-markdown": "^12.0.0",
+    "textlint-rule-preset-ja-spacing": "^2.1.3"
+  }
+}
