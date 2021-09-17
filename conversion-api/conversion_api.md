@@ -22,7 +22,7 @@ TU  坂田誠也
 
 - Conversion API成立の背景についてざっくり理解する
 
-- Conversion APIの仕様についてざっくり理解
+- Conversion APIの仕様についてざっくり理解し、Facebookのみならずこれからの広告ビジネスの主軸になることをざっくり理解する
 
 - 様々な導入方法があり要件によって検討すること
 
@@ -63,17 +63,9 @@ TU  坂田誠也
 
 ## 注意
 
-背景として Apple の iOS14 のポリシー変更の話を避けて通ることができません（そしてややこしい）
+今回の発表で話す Conversion API はウェブイベント測定のためのツールなのでアプリには対応していません。
 
 以降「アプリ」と表記されるものは「モバイルアプリ」（特に iOS アプリ）、「ウェブ」はウェブアプリについてです
-
----
-
-<!-- _class: gaia -->
-
-## 注意
-
-今回の発表で話す Conversion API はウェブイベント測定のためのツールなのでアプリには対応していません。
 
 ---
 
@@ -98,6 +90,8 @@ TU  坂田誠也
 [Facebook Conversion API](https://ja-jp.facebook.com/business/help/2041148702652965?id=818859032317965)（以下 Conversion API）は Facebook から提供されている、ウェブイベントやオフラインイベントを Facebook に共有するためのインターフェースです。
 
 実体は Facebook の[グラフ API](https://developers.facebook.com/docs/graph-api?locale=ja_JP)(GraphQL とは別)で提供されている API の一つ。
+
+サーバサイドからのウェブイベントのハンドリングを行うため、クッキーレスでの計測が可能になります。
 
 ---
 
@@ -378,3 +372,5 @@ Facebook Conversion API と統合可能なサービスを使用することで�
 ### PIALAでの設計・実装
 
 オフレコなので画面共有で見せます。
+
+
