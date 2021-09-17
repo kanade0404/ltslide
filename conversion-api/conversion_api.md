@@ -119,8 +119,8 @@ TU  坂田誠也
 - **ITP(Intelligent Tracking Prevention)**
 
 - iOS14.5 の新しいポリシー
-  - **ATT(AppTrackingTransparency)**
-  - **SKAdNetwork**
+  - ATT(AppTrackingTransparency)
+  - SKAdNetwork
 
 ---
 
@@ -129,6 +129,16 @@ TU  坂田誠也
 ### ITP(Intelligent Tracking Prevention)
 
 safari に搭載されたトラッキング防止機能
+
+Conversion API成立において大きなインパクトを与えた
+
+[Full Third-Party Cookie Blocking and More](https://webkit.org/blog/10218/full-third-party-cookie-blocking-and-more/)
+
+---
+
+<!-- _class: gaia -->
+
+### ITP(Intelligent Tracking Prevention)
 
 #### 3rd Party Cookie
 
@@ -141,8 +151,6 @@ safari に搭載されたトラッキング防止機能
 #### リファラー取得
 
 JavaScript の`document.referer`によるリファラー取得内容のダウングレード
-
-[Full Third-Party Cookie Blocking and More](https://webkit.org/blog/10218/full-third-party-cookie-blocking-and-more/)
 
 ---
 
@@ -201,22 +209,6 @@ iOS14.5 の新しいポリシー概要
 
 <!-- _class: gaia -->
 
-## Conversion API の背景
-
-iOS14.5 の新しいポリシー
-
-- プライバシーラベル義務化
-
-- **オプトイン設定画面義務化**
-
-- API を通じたトラッキング義務化
-
-どれも広告ビジネスに対してインパクトが大きく、影響範囲はあらゆる利用者やプラットフォーマー、マーケターに及びます
-
----
-
-<!-- _class: gaia -->
-
 ### オプトイン設定画面義務化
 
 App Store で公開されている Facebook などのアプリは、Apple の AppTrackingTransparency(ATT)を通じて、Third Party のアプリとウェブサイトにおけるトラッキングの許可を利用者に求める必要があります。
@@ -263,7 +255,19 @@ IDFA にアクセスすることなくイベントの計測を行えるが制限
 
 ### 従来の効果計測の補完
 
-![image](./share_event_id.drawio.png)
+購入者情報と Facebook ユーザーの情報を照会して購入者と広告を踏んだ人をマッチングする。
+
+![image](https://raw.githubusercontent.com/kanade0404/ltslide/master/conversion-api/share_event_id.drawio.png)
+
+---
+
+<!-- _class: gaia -->
+
+### 新たな計測対象
+
+ウェブイベントで取得できない深いイベントの計測と最適化
+
+![image](https://raw.githubusercontent.com/kanade0404/ltslide/master/conversion-api/offline_event.drawio.png)
 
 ---
 
@@ -271,8 +275,83 @@ IDFA にアクセスすることなくイベントの計測を行えるが制限
 
 ### オーディエンスによる広告最適化
 
+![image](https://raw.githubusercontent.com/kanade0404/ltslide/master/conversion-api/ad_optimization.drawio.png)
+
+---
+
+<!-- _class: gaia -->
+## 疑問
+
+### Q1. 効果あるの？
+
+### A1. あります。
+
+#### セゾン自動車火災保険株式会社
+
+webイベントのみとConversion APIとの併用のキャンペーンで検証し、**CPAは-14%、CV件数送付量は+16%**
+
+#### 株式会社sparty
+
+セゾンと同様の検証を行い、**CPMが-23%、CPA-11%、CV件数送付量が+13%**
+
+---
+
+<!-- _class: gaia -->
+## 疑問
+
+### Q2. 他メディアは無いの？
+
+### A2. ありそうだが未調査
+
+ただしFacebookは例えばGoogleとかYahooなどと違って広告収入への依存度が相対的に高いため力を入れており、他メディアで同等の機能が提供されるかは不明（知ってたら教えてください）
+
 ---
 
 <!-- _class: gaia -->
 
 ## Conversion API の設計・実装
+
+Conversion API の導入方法
+
+1. プラグインによるノーコード実装
+2. 他社サービスによる実装
+3. 独自実装
+
+---
+
+<!-- _class: gaia -->
+
+### プラグインによるノーコード実装
+
+Facebook Conversion API と統合可能なサービスを使用することで、ほぼノーコードで導入・実装することができます。
+
+実際に使ったことはないので詳細はあまりわからないですが導入のしやすさは一番でしょう。
+
+![image](./conversion_api_plugin.drawio.png)
+
+---
+
+<!-- _class: gaia -->
+
+### 他社サービスによる実装
+
+大きく二つあり、他社の ASP 連携を行うのと自社サーバでの開発支援の依頼があります。
+
+コストは統合先によりますが、プラグインでの導入よりも格段にできることが増えて自由度は上がります。
+
+[ポスト Cookie 時代に備えた広告効果計測ソリューションの導入支援サービス、株式会社フィードフォースがアナグラム株式会社と共同で提供開始](https://prtimes.jp/main/html/rd/p/000000067.000071307.html)
+
+[トランスコスモス、Cookie規制対策後のデータ活用を推進するデータマーケティングチームを発足](https://www.trans-cosmos.co.jp/company/news/210615.html)
+
+[ONE’s Data](https://onesdata.com/)
+
+---
+
+<!-- _class: gaia -->
+
+### 自前実装
+
+自前実装の素朴な例
+
+![image](https://raw.githubusercontent.com/kanade0404/ltslide/master/conversion-api/share_event_id.drawio.png)
+
