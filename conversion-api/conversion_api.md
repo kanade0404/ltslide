@@ -8,7 +8,7 @@ size: 4:3
 <!-- _class: lead invert -->
 <!-- _paginate: false -->
 
-# 新しい広告最適化 Conversion API ~概要と導入実装~
+# 新しい広告最適化 ~Conversion API の概要と導入実装~
 
 <br>
 
@@ -18,9 +18,27 @@ TU  坂田誠也
 
 <!-- _class: gaia -->
 
+## 目標
+
+- Conversion API成立の背景についてざっくり理解する
+
+- Conversion APIの仕様についてざっくり理解
+
+- 様々な導入方法があり要件によって検討すること
+
+---
+
+<!-- _class: gaia -->
+
+![image](20180515092452a6e.png)
+
+---
+
+<!-- _class: gaia -->
+
 ## この話のまとめ
 
-- Conversion API は近年の急速な個人情報規制と Apple の新ポリシーが背景
+- Conversion API は近年の急速な個人情報規制と ITPが背景
 
 - サーバからのウェブイベント送信で欠損の補完と従来捕捉できなかったオフラインイベントも計測可能に
 
@@ -36,8 +54,8 @@ TU  坂田誠也
 
 - 最近は TypeScript、GCP、terraform とか
 
-これは初回盤リメイク月姫のアニメイト特典 A4 アクリルパネル
-![image](./tsukihime.JPG)
+これは特に関係の無い初回盤月姫のアニメイト特典 A4 アクリルパネル（かわいい）
+![image](https://raw.githubusercontent.com/kanade0404/ltslide/master/conversion-api/tsukihime.JPG)
 
 ---
 
@@ -47,9 +65,7 @@ TU  坂田誠也
 
 背景として Apple の iOS14 のポリシー変更の話を避けて通ることができません（そしてややこしい）
 
-**アプリの話かそうでないか**を区別してください
-
-以下で「アプリ」と表記されるものは「モバイルアプリ」（特に iOS アプリ）、「ウェブ」はウェブアプリについてです
+以降「アプリ」と表記されるものは「モバイルアプリ」（特に iOS アプリ）、「ウェブ」はウェブアプリについてです
 
 ---
 
@@ -69,19 +85,9 @@ TU  坂田誠也
 
 - Conversion API の背景
 
-  - プライバシーラベル義務化
-
-  - オプトイン設定画面義務化
-
-  - API を通じたトラッキング義務化
-
 - Conversion API の利用目的
 
 - Conversion API の導入と設計
-
-  - Conversion API の導入
-
-  - Conversion API の設計・実装
 
 ---
 
@@ -119,7 +125,7 @@ TU  坂田誠也
 - **ITP(Intelligent Tracking Prevention)**
 
 - iOS14.5 の新しいポリシー
-  - ATT(AppTrackingTransparency)
+  - AppTrackingTransparency(ATT)
   - SKAdNetwork
 
 ---
@@ -172,7 +178,7 @@ iOS14.5 の新しいポリシー概要
 
 ## Conversion API の背景
 
-iOS14.5 の新しいポリシー概要
+少し寄り道してiOS14.5 の新しいポリシー概要
 
 - **プライバシーラベル義務化**
 
@@ -203,7 +209,7 @@ iOS14.5 の新しいポリシー概要
 ### プライバシーラベル義務化
 
 画像:Apple Music のプライバシーラベル
-![image](./app_music_privacy_label.png)
+![image](https://raw.githubusercontent.com/kanade0404/ltslide/master/conversion-api/app_music_privacy_label.png)
 
 ---
 
@@ -280,6 +286,14 @@ IDFA にアクセスすることなくイベントの計測を行えるが制限
 ---
 
 <!-- _class: gaia -->
+
+### オーディエンスによる広告最適化
+
+![image](https://raw.githubusercontent.com/kanade0404/ltslide/master/conversion-api/ad_optimization.drawio.png)
+
+---
+
+<!-- _class: gaia -->
 ## 疑問
 
 ### Q1. 効果あるの？
@@ -289,10 +303,12 @@ IDFA にアクセスすることなくイベントの計測を行えるが制限
 #### セゾン自動車火災保険株式会社
 
 webイベントのみとConversion APIとの併用のキャンペーンで検証し、**CPAは-14%、CV件数送付量は+16%**
+https://markezine.jp/article/detail/36718
 
 #### 株式会社sparty
 
 セゾンと同様の検証を行い、**CPMが-23%、CPA-11%、CV件数送付量が+13%**
+https://cyberace.co.jp/news/post-1017/
 
 ---
 
@@ -327,7 +343,7 @@ Facebook Conversion API と統合可能なサービスを使用することで�
 
 実際に使ったことはないので詳細はあまりわからないですが導入のしやすさは一番でしょう。
 
-![image](./conversion_api_plugin.drawio.png)
+![image](https://raw.githubusercontent.com/kanade0404/ltslide/master/conversion-api/conversion_api_plugin.drawio.png)
 
 ---
 
@@ -355,3 +371,10 @@ Facebook Conversion API と統合可能なサービスを使用することで�
 
 ![image](https://raw.githubusercontent.com/kanade0404/ltslide/master/conversion-api/share_event_id.drawio.png)
 
+---
+
+<!-- _class: gaia -->
+
+### PIALAでの設計・実装
+
+オフレコなので画面共有で見せます。
