@@ -289,7 +289,7 @@ IDFA にアクセスすることなくイベントの計測を行えるが制限
 
 ### オーディエンスによる広告最適化
 
-![image](https://raw.githubusercontent.com/kanade0404/ltslide/master/conversion-api/ad_optimization.drawio.png)
+![image](https://raw.githubusercontent.com/kanade0404/ltslide/master/conversion-api/ad_optimization_fbclid.drawio.png)
 
 ---
 
