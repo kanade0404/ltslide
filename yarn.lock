@@ -70,7 +70,7 @@
     wrap-ansi "^8.1.0"
     wrap-ansi-cjs "npm:wrap-ansi@^7.0.0"
 
-"@marp-team/marp-cli@^4.0.0":
+"@marp-team/marp-cli@4.0.3":
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/@marp-team/marp-cli/-/marp-cli-4.0.3.tgz#4825a295441549da50c5db52b6233073ee7894cc"
   integrity sha512-DZzC06axrgG9tYNncqqtX0sa5K6PS3/wLE1LCedVyhhyfEdOxSxv+MjZW2v3inuff/OzBrIHfla8yGl+CwiqPw==
@@ -384,19 +384,19 @@
   dependencies:
     "@textlint/ast-node-types" "^14.3.0"
 
+"@textlint/textlint-plugin-markdown@14.3.0", "@textlint/textlint-plugin-markdown@^14.3.0":
+  version "14.3.0"
+  resolved "https://registry.yarnpkg.com/@textlint/textlint-plugin-markdown/-/textlint-plugin-markdown-14.3.0.tgz#86d2b6539142462f12c58afca936b8b39240f6a8"
+  integrity sha512-0lyYK/SUOgww+sxBtvjjsinHKMvFZUpLKvxCepymGlTyuOTYo7QmjmfhLc5G97PChOpUG41dpQoZt9miohQT1A==
+  dependencies:
+    "@textlint/markdown-to-ast" "^14.3.0"
+
 "@textlint/textlint-plugin-markdown@^13.4.1":
   version "13.4.1"
   resolved "https://registry.yarnpkg.com/@textlint/textlint-plugin-markdown/-/textlint-plugin-markdown-13.4.1.tgz#8e1c78c4b5b501bf7e2def6c7d1cbd12a3a8436f"
   integrity sha512-OcLkFKYmbYeGJ0kj2487qcicCYTiE2vJLwfPcUDJrNoMYak5JtvHJfWffck8gON2mEM00DPkHH0UdxZpFjDfeg==
   dependencies:
     "@textlint/markdown-to-ast" "^13.4.1"
-
-"@textlint/textlint-plugin-markdown@^14.0.0", "@textlint/textlint-plugin-markdown@^14.3.0":
-  version "14.3.0"
-  resolved "https://registry.yarnpkg.com/@textlint/textlint-plugin-markdown/-/textlint-plugin-markdown-14.3.0.tgz#86d2b6539142462f12c58afca936b8b39240f6a8"
-  integrity sha512-0lyYK/SUOgww+sxBtvjjsinHKMvFZUpLKvxCepymGlTyuOTYo7QmjmfhLc5G97PChOpUG41dpQoZt9miohQT1A==
-  dependencies:
-    "@textlint/markdown-to-ast" "^14.3.0"
 
 "@textlint/textlint-plugin-text@^13.4.1":
   version "13.4.1"
@@ -3511,7 +3511,7 @@ textlint-rule-no-zero-width-spaces@^1.0.1:
   resolved "https://registry.yarnpkg.com/textlint-rule-no-zero-width-spaces/-/textlint-rule-no-zero-width-spaces-1.0.1.tgz#15a6abda05f08e483d5bb33a7034d904259d77a3"
   integrity sha512-AkxpzBILGB4YsXddzHx2xqpXmqMv5Yd+PQm4anUV+ADSJuwLP1Jd6yHf/LOtu9j3ps8K3XM9vQrXRK73z0bU3A==
 
-textlint-rule-preset-ja-spacing@^2.1.3:
+textlint-rule-preset-ja-spacing@2.4.3:
   version "2.4.3"
   resolved "https://registry.yarnpkg.com/textlint-rule-preset-ja-spacing/-/textlint-rule-preset-ja-spacing-2.4.3.tgz#affd9b54e1aea8739cfb8a41a23fd29cbb669e83"
   integrity sha512-WAiWY9TOE8/bRdl14XJdjkPQcV0hLS4O+PCUYU1yxXmJhZ8V3ciw2GYqpA9GL73qAxL25UD6mkf1yfz6aJ4qSA==
@@ -3525,7 +3525,7 @@ textlint-rule-preset-ja-spacing@^2.1.3:
     textlint-rule-ja-space-around-link "^2.4.2"
     textlint-rule-ja-space-between-half-and-full-width "^2.4.2"
 
-textlint-rule-preset-ja-technical-writing@^10.0.0:
+textlint-rule-preset-ja-technical-writing@10.0.1:
   version "10.0.1"
   resolved "https://registry.yarnpkg.com/textlint-rule-preset-ja-technical-writing/-/textlint-rule-preset-ja-technical-writing-10.0.1.tgz#8e3f561c734121218c9f3d8050f297e499cbc6c0"
   integrity sha512-GC7sUPsn65UOZcBQ+SLvt3RRmGcm3Fb8t/o8/hD/zyRr1NpYYNrtte0HckVnCPH3TD8zbMt4mov2nlnfA8f7gg==
@@ -3589,10 +3589,10 @@ textlint-rule-sentence-length@^5.0.0:
     textlint-rule-helper "^2.3.1"
     textlint-util-to-string "^3.3.4"
 
-textlint-rule-spellcheck-tech-word@^5.0.0:
+textlint-rule-spellcheck-tech-word@5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/textlint-rule-spellcheck-tech-word/-/textlint-rule-spellcheck-tech-word-5.0.0.tgz#279be31fd4b395e1f87b4a1ef6392f1504894c42"
-  integrity sha1-J5vjH9SzleH4e0oe9jkvFQSJTEI=
+  integrity sha512-BvQiWP5PZzRQQZLpGaai9XzQuQKGmJoP1wIgU8AiIGViEvX+NPoUUK4HLsZd31m0tBpQOU/4+rpy130jUf3Z8A==
   dependencies:
     spellcheck-technical-word "^2.0.0"
     textlint-rule-helper "^1.1.2"
@@ -3628,7 +3628,7 @@ textlint-util-to-string@^3.3.4:
     structured-source "^4.0.0"
     unified "^8.4.0"
 
-textlint@^14.0.0:
+textlint@14.3.0:
   version "14.3.0"
   resolved "https://registry.yarnpkg.com/textlint/-/textlint-14.3.0.tgz#7086f51f2bc9795aeaf1f01ed53f96385bda332c"
   integrity sha512-oarGVGz7KwRd08QOvNDSffzjEyfS5mnGp7ZAxr799QC0HDBp0VM358WGyxdaboDXav1RlkQ3TWkvOvHBBMXCXw==
