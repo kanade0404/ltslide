@@ -7,7 +7,7 @@
   "license": "MIT",
   "dependencies": {
     "@marp-team/marp-cli": "4.0.3",
-    "@textlint/textlint-plugin-markdown": "14.5.0",
+    "@textlint/textlint-plugin-markdown": "14.7.2",
     "textlint": "14.3.0",
     "textlint-rule-preset-ja-spacing": "2.4.3",
     "textlint-rule-preset-ja-technical-writing": "10.0.1",
