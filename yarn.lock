@@ -198,6 +198,11 @@
     sentence-splitter "^5.0.0"
     textlint-rule-helper "^2.3.1"
 
+"@textlint/ast-node-types@14.8.4":
+  version "14.8.4"
+  resolved "https://registry.yarnpkg.com/@textlint/ast-node-types/-/ast-node-types-14.8.4.tgz#2f2e1988bfce3613c14de114503cefa7c7cb5108"
+  integrity sha512-+fI7miec/r9VeniFV9ppL4jRCmHNsTxieulTUf/4tvGII3db5hGriKHC4p/diq1SkQ9Sgs7kg6UyydxZtpTz1Q==
+
 "@textlint/ast-node-types@^13.4.1":
   version "13.4.1"
   resolved "https://registry.yarnpkg.com/@textlint/ast-node-types/-/ast-node-types-13.4.1.tgz#00424f7b9bc6fe15cf6a78468ffe1e5d1adce5b2"
@@ -333,6 +338,22 @@
     table "^6.9.0"
     text-table "^0.2.0"
 
+"@textlint/markdown-to-ast@14.8.4":
+  version "14.8.4"
+  resolved "https://registry.yarnpkg.com/@textlint/markdown-to-ast/-/markdown-to-ast-14.8.4.tgz#532aaafc98bf83c756e70a90232ddcc669afecfc"
+  integrity sha512-9x7xqpk//79nREP4Hb219UG3N3lERNorlhXOl1XX4A0y8BcDAKKDv70WftkF9VZ+sx4ys4dv/iOsBA29I0nNQA==
+  dependencies:
+    "@textlint/ast-node-types" "14.8.4"
+    debug "^4.4.1"
+    mdast-util-gfm-autolink-literal "^0.1.3"
+    neotraverse "^0.6.18"
+    remark-footnotes "^3.0.0"
+    remark-frontmatter "^3.0.0"
+    remark-gfm "^1.0.0"
+    remark-parse "^9.0.0"
+    structured-source "^4.0.0"
+    unified "^9.2.2"
+
 "@textlint/markdown-to-ast@^13.4.1":
   version "13.4.1"
   resolved "https://registry.yarnpkg.com/@textlint/markdown-to-ast/-/markdown-to-ast-13.4.1.tgz#63f1f87fb059c083c13a434f7117aca786867835"
@@ -430,12 +451,13 @@
   dependencies:
     "@textlint/ast-node-types" "^14.8.1"
 
-"@textlint/textlint-plugin-markdown@14.8.1", "@textlint/textlint-plugin-markdown@^14.8.1":
-  version "14.8.1"
-  resolved "https://registry.yarnpkg.com/@textlint/textlint-plugin-markdown/-/textlint-plugin-markdown-14.8.1.tgz#e01896b57d7134a8cd27237ad5f3d95fde27a703"
-  integrity sha512-t6okCas3o/HvKQLHK8/cD15m3XnOnsxJEW1PFkBKuLoqtWt1tXOb3kW1AHcumW0kdHD7ZvwRNyUrOmhuCHXxww==
+"@textlint/textlint-plugin-markdown@14.8.4":
+  version "14.8.4"
+  resolved "https://registry.yarnpkg.com/@textlint/textlint-plugin-markdown/-/textlint-plugin-markdown-14.8.4.tgz#c7e89300d99898423f38632f76b047770829f6c6"
+  integrity sha512-WWFo05mIsXaJPrWiR/nsvaLd/nUS0xWWeJg6AcpOkrxyIqH//PyTuQHD9sYpJkCFopWP1/8GeCba+a/m2llX4g==
   dependencies:
-    "@textlint/markdown-to-ast" "^14.8.1"
+    "@textlint/markdown-to-ast" "14.8.4"
+    "@textlint/types" "14.8.4"
 
 "@textlint/textlint-plugin-markdown@^13.4.1":
   version "13.4.1"
@@ -443,6 +465,13 @@
   integrity sha512-OcLkFKYmbYeGJ0kj2487qcicCYTiE2vJLwfPcUDJrNoMYak5JtvHJfWffck8gON2mEM00DPkHH0UdxZpFjDfeg==
   dependencies:
     "@textlint/markdown-to-ast" "^13.4.1"
+
+"@textlint/textlint-plugin-markdown@^14.8.1":
+  version "14.8.1"
+  resolved "https://registry.yarnpkg.com/@textlint/textlint-plugin-markdown/-/textlint-plugin-markdown-14.8.1.tgz#e01896b57d7134a8cd27237ad5f3d95fde27a703"
+  integrity sha512-t6okCas3o/HvKQLHK8/cD15m3XnOnsxJEW1PFkBKuLoqtWt1tXOb3kW1AHcumW0kdHD7ZvwRNyUrOmhuCHXxww==
+  dependencies:
+    "@textlint/markdown-to-ast" "^14.8.1"
 
 "@textlint/textlint-plugin-text@^13.4.1":
   version "13.4.1"
@@ -457,6 +486,13 @@
   integrity sha512-w5fm62kbzWv6KJw/bm2gVloi9A4XWIya416B4A3Og6fADPdG/YbWp0dvUynnJSw0GPYKKna6u+dc9SgdOUNcBg==
   dependencies:
     "@textlint/text-to-ast" "^14.8.1"
+
+"@textlint/types@14.8.4":
+  version "14.8.4"
+  resolved "https://registry.yarnpkg.com/@textlint/types/-/types-14.8.4.tgz#8d7dfb32cba33a0d5b213ea19aed0b6e9f61b21f"
+  integrity sha512-9nyY8vVXlr8hHKxa6+37omJhXWCwovMQcgMteuldYd4dOxGm14AK2nXdkgtKEUQnzLGaXy46xwLCfhQy7V7/YA==
+  dependencies:
+    "@textlint/ast-node-types" "14.8.4"
 
 "@textlint/types@^1.5.5":
   version "1.5.5"
@@ -2696,7 +2732,7 @@ negotiator@^1.0.0:
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-1.0.0.tgz#b6c91bb47172d69f93cfd7c357bbb529019b5f6a"
   integrity sha512-8Ofs/AUQh8MaEcrlq5xOX0CQ9ypTF5dl78mjlMNfOK08fzpgTHQRQPBxcPlEtIw0yRpws+Zo/3r+5WRby7u3Gg==
 
-neotraverse@^0.6.15:
+neotraverse@^0.6.15, neotraverse@^0.6.18:
   version "0.6.18"
   resolved "https://registry.yarnpkg.com/neotraverse/-/neotraverse-0.6.18.tgz#abcb33dda2e8e713cf6321b29405e822230cdb30"
   integrity sha512-Z4SmBUweYa09+o6pG+eASabEpP6QkQ70yHj351pQoEXIs8uHbaU2DWVmzBANKgflPa47A50PtB2+NgRpQvr7vA==
