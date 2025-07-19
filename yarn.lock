@@ -102,19 +102,19 @@
   dependencies:
     buffer "^6.0.3"
 
-"@marp-team/marp-cli@4.2.0":
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/@marp-team/marp-cli/-/marp-cli-4.2.0.tgz#4d295f2b574fe124bad2826d623398a1c67a044b"
-  integrity sha512-98yHfGeRxWzKff6aiAhXlyXnSbu5hr4NGzSfiUODEbH0m5Rri/hVneYGKCebWWh7mc3ZFlkx+w72+NCB75sj7A==
+"@marp-team/marp-cli@4.2.1":
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/@marp-team/marp-cli/-/marp-cli-4.2.1.tgz#09c097ce412641f07ae39a4bc549c05980caf14a"
+  integrity sha512-mqkMn+PQbl5hCA5MOUAX1jp1PvOqbVRPQogGtQQ3Bt15Pe86tPZpZRQfqGyxG+BnAi2Y82lKTUJLLxRNTwvZYg==
   dependencies:
     "@marp-team/marp-core" "^4.1.0"
     "@marp-team/marpit" "^3.1.3"
     chokidar "^4.0.3"
     cosmiconfig "^9.0.0"
-    puppeteer-core "^24.10.0"
+    puppeteer-core "^24.14.0"
     serve-index "^1.9.1"
     tmp "^0.2.3"
-    ws "^8.18.2"
+    ws "^8.18.3"
     yargs "^17.7.2"
 
 "@marp-team/marp-core@^4.1.0":
@@ -172,17 +172,17 @@
   resolved "https://registry.yarnpkg.com/@pkgjs/parseargs/-/parseargs-0.11.0.tgz#a77ea742fab25775145434eb1d2328cf5013ac33"
   integrity sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==
 
-"@puppeteer/browsers@2.10.5":
-  version "2.10.5"
-  resolved "https://registry.yarnpkg.com/@puppeteer/browsers/-/browsers-2.10.5.tgz#dddb8f8716ae6364f6f2d31125e76f311dd4a49d"
-  integrity sha512-eifa0o+i8dERnngJwKrfp3dEq7ia5XFyoqB17S4gK8GhsQE4/P8nxOfQSE0zQHxzzLo/cmF+7+ywEQ7wK7Fb+w==
+"@puppeteer/browsers@2.10.6":
+  version "2.10.6"
+  resolved "https://registry.yarnpkg.com/@puppeteer/browsers/-/browsers-2.10.6.tgz#0b1b5046ec4918a4fd4e4c9383153a80af288bd2"
+  integrity sha512-pHUn6ZRt39bP3698HFQlu2ZHCkS/lPcpv7fVQcGBSzNNygw171UXAKrCUhy+TEMw4lEttOKDgNpb04hwUAJeiQ==
   dependencies:
     debug "^4.4.1"
     extract-zip "^2.0.1"
     progress "^2.0.3"
     proxy-agent "^6.5.0"
     semver "^7.7.2"
-    tar-fs "^3.0.8"
+    tar-fs "^3.1.0"
     yargs "^17.7.2"
 
 "@textlint-rule/textlint-rule-no-invalid-control-character@^3.0.0":
@@ -904,10 +904,10 @@ chokidar@^4.0.3:
   dependencies:
     readdirp "^4.0.1"
 
-chromium-bidi@5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/chromium-bidi/-/chromium-bidi-5.1.0.tgz#8d0e47f7ac9270262df29792318dd5378e983e62"
-  integrity sha512-9MSRhWRVoRPDG0TgzkHrshFSJJNZzfY5UFqUMuksg7zL1yoZIZ3jLB0YAgHclbiAxPI86pBnwDX1tbzoiV8aFw==
+chromium-bidi@7.1.1:
+  version "7.1.1"
+  resolved "https://registry.yarnpkg.com/chromium-bidi/-/chromium-bidi-7.1.1.tgz#22da11f1022f549e66cf86d213ebde427328576f"
+  integrity sha512-L2BKQ0rSLADgbPMIdDh3wnYHs3EiUiMay2Sq0CTolheaADmWIf6Pe+T9LJRcnh5rcMz0U7MVk0cQVvKsGRMa1g==
   dependencies:
     mitt "^3.0.1"
     zod "^3.24.1"
@@ -1168,10 +1168,10 @@ depd@~1.1.2:
   resolved "https://registry.yarnpkg.com/depd/-/depd-1.1.2.tgz#9bcd52e14c097763e749b274c4346ed2e560b5a9"
   integrity sha512-7emPTl6Dpo6JRXOXjLRxck+FlLRX5847cLKEn00PLAgc3g2hTZZgr+e4c2v6QpSmLeFP3n5yUo7ft6avBK/5jQ==
 
-devtools-protocol@0.0.1452169:
-  version "0.0.1452169"
-  resolved "https://registry.yarnpkg.com/devtools-protocol/-/devtools-protocol-0.0.1452169.tgz#25c56a1e9ed0af99b03a00d605a22eae367d85db"
-  integrity sha512-FOFDVMGrAUNp0dDKsAU1TorWJUx2JOU1k9xdgBKKJF3IBh/Uhl2yswG5r3TEAOrCiGY2QRp1e6LVDQrCsTKO4g==
+devtools-protocol@0.0.1464554:
+  version "0.0.1464554"
+  resolved "https://registry.yarnpkg.com/devtools-protocol/-/devtools-protocol-0.0.1464554.tgz#54d88398c99ad93fc81c35569fba9473b6e223d0"
+  integrity sha512-CAoP3lYfwAGQTaAXYvA6JZR0fjGUb7qec1qf4mToyoH2TZgUFeIqYcjh6f9jNuhHfuZiEdH+PONHYrLhRQX6aw==
 
 diff@^4.0.1:
   version "4.0.2"
@@ -3086,17 +3086,17 @@ punycode@^2.1.0:
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.3.1.tgz#027422e2faec0b25e1549c3e1bd8309b9133b6e5"
   integrity sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==
 
-puppeteer-core@^24.10.0:
-  version "24.10.0"
-  resolved "https://registry.yarnpkg.com/puppeteer-core/-/puppeteer-core-24.10.0.tgz#b44175d90511eb414395ae60c51a13185b391421"
-  integrity sha512-xX0QJRc8t19iAwRDsAOR38Q/Zx/W6WVzJCEhKCAwp2XMsaWqfNtQ+rBfQW9PlF+Op24d7c8Zlgq9YNmbnA7hdQ==
+puppeteer-core@^24.14.0:
+  version "24.14.0"
+  resolved "https://registry.yarnpkg.com/puppeteer-core/-/puppeteer-core-24.14.0.tgz#c2e3e80649b6a0c2855c3dae09c794c981c686d6"
+  integrity sha512-NO9XpCl+i8oB0zJp81iPhzMo2QK8/JTj4ramSvTpGCo9CPCNo4AZ8qVOGpSgXzlcOfOT3VHOkzTfPo08GOE5jA==
   dependencies:
-    "@puppeteer/browsers" "2.10.5"
-    chromium-bidi "5.1.0"
+    "@puppeteer/browsers" "2.10.6"
+    chromium-bidi "7.1.1"
     debug "^4.4.1"
-    devtools-protocol "0.0.1452169"
+    devtools-protocol "0.0.1464554"
     typed-query-selector "^2.12.0"
-    ws "^8.18.2"
+    ws "^8.18.3"
 
 qs@^6.14.0:
   version "6.14.0"
@@ -3746,10 +3746,10 @@ table@^6.9.0:
     string-width "^4.2.3"
     strip-ansi "^6.0.1"
 
-tar-fs@^3.0.8:
-  version "3.0.8"
-  resolved "https://registry.yarnpkg.com/tar-fs/-/tar-fs-3.0.8.tgz#8f62012537d5ff89252d01e48690dc4ebed33ab7"
-  integrity sha512-ZoROL70jptorGAlgAYiLoBLItEKw/fUxg9BSYK/dF/GAGYFJOJJJMvjPAKDJraCXFwadD456FCuvLWgfhMsPwg==
+tar-fs@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/tar-fs/-/tar-fs-3.1.0.tgz#4675e2254d81410e609d91581a762608de999d25"
+  integrity sha512-5Mty5y/sOF1YWj1J6GiBodjlDc05CUR8PKXrsnFAiSG0xA+GHeWLovaZPYUDXkH/1iKRf2+M5+OrRgzC7O9b7w==
   dependencies:
     pump "^3.0.0"
     tar-stream "^3.1.5"
@@ -4537,10 +4537,10 @@ wrappy@1:
   resolved "https://registry.yarnpkg.com/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
   integrity sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==
 
-ws@^8.18.2:
-  version "8.18.2"
-  resolved "https://registry.yarnpkg.com/ws/-/ws-8.18.2.tgz#42738b2be57ced85f46154320aabb51ab003705a"
-  integrity sha512-DMricUmwGZUVr++AEAe2uiVM7UoO9MAVZMDu05UQOaUII0lp+zOzLLU4Xqh/JvTqklB1T4uELaaPBKyjE1r4fQ==
+ws@^8.18.3:
+  version "8.18.3"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-8.18.3.tgz#b56b88abffde62791c639170400c93dcb0c95472"
+  integrity sha512-PEIGCY5tSlUt50cqyMXfCzX+oOPqN0vuGqWzbcJ2xvnkzkq46oOpz7dQaTDBdfICb4N14+GARUDw2XV2N4tvzg==
 
 xmldom-sre@0.1.31:
   version "0.1.31"
