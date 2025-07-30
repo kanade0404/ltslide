@@ -102,10 +102,10 @@
   dependencies:
     buffer "^6.0.3"
 
-"@marp-team/marp-cli@4.2.1":
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/@marp-team/marp-cli/-/marp-cli-4.2.1.tgz#09c097ce412641f07ae39a4bc549c05980caf14a"
-  integrity sha512-mqkMn+PQbl5hCA5MOUAX1jp1PvOqbVRPQogGtQQ3Bt15Pe86tPZpZRQfqGyxG+BnAi2Y82lKTUJLLxRNTwvZYg==
+"@marp-team/marp-cli@4.2.2":
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/@marp-team/marp-cli/-/marp-cli-4.2.2.tgz#fa783f59a543cd53f694449a9156aa2e96f034b7"
+  integrity sha512-meX2LXggcagzFYxw09lP/kQ17Qi+lEvJMJ14WFWK00uy1yorEWSAbqKw9vtKb9Z4teBMwBGetP5/WQtyjj0XNQ==
   dependencies:
     "@marp-team/marp-core" "^4.1.0"
     "@marp-team/marpit" "^3.1.3"
