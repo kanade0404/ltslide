@@ -6,7 +6,7 @@
   "author": "kanade <melty0404@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@marp-team/marp-cli": "4.2.2",
+    "@marp-team/marp-cli": "4.2.3",
     "@textlint/textlint-plugin-markdown": "14.8.4",
     "textlint": "14.8.4",
     "textlint-rule-preset-ja-spacing": "2.4.3",
