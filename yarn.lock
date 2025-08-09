@@ -102,18 +102,18 @@
   dependencies:
     buffer "^6.0.3"
 
-"@marp-team/marp-cli@4.2.2":
-  version "4.2.2"
-  resolved "https://registry.yarnpkg.com/@marp-team/marp-cli/-/marp-cli-4.2.2.tgz#fa783f59a543cd53f694449a9156aa2e96f034b7"
-  integrity sha512-meX2LXggcagzFYxw09lP/kQ17Qi+lEvJMJ14WFWK00uy1yorEWSAbqKw9vtKb9Z4teBMwBGetP5/WQtyjj0XNQ==
+"@marp-team/marp-cli@4.2.3":
+  version "4.2.3"
+  resolved "https://registry.yarnpkg.com/@marp-team/marp-cli/-/marp-cli-4.2.3.tgz#4cb480320e7f3f3aac76441f4efbb7dbdab67d6d"
+  integrity sha512-yfEIkF7mlumg8CVV5m/UkLEDkW/ayM/SD6Bo8fbAvdscBQ/l9D44/aNFJsiqgNtjfktzpvRqjcBXNhWD0YTq5Q==
   dependencies:
     "@marp-team/marp-core" "^4.1.0"
     "@marp-team/marpit" "^3.1.3"
     chokidar "^4.0.3"
     cosmiconfig "^9.0.0"
-    puppeteer-core "^24.14.0"
+    puppeteer-core "^24.16.0"
     serve-index "^1.9.1"
-    tmp "^0.2.3"
+    tmp "^0.2.5"
     ws "^8.18.3"
     yargs "^17.7.2"
 
@@ -904,10 +904,10 @@ chokidar@^4.0.3:
   dependencies:
     readdirp "^4.0.1"
 
-chromium-bidi@7.1.1:
-  version "7.1.1"
-  resolved "https://registry.yarnpkg.com/chromium-bidi/-/chromium-bidi-7.1.1.tgz#22da11f1022f549e66cf86d213ebde427328576f"
-  integrity sha512-L2BKQ0rSLADgbPMIdDh3wnYHs3EiUiMay2Sq0CTolheaADmWIf6Pe+T9LJRcnh5rcMz0U7MVk0cQVvKsGRMa1g==
+chromium-bidi@7.2.0:
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/chromium-bidi/-/chromium-bidi-7.2.0.tgz#3bbd593362d09af83c955baf8d0ebf88ab3aa06b"
+  integrity sha512-gREyhyBstermK+0RbcJLbFhcQctg92AGgDe/h/taMJEOLRdtSswBAO9KmvltFSQWgM2LrwWu5SIuEUbdm3JsyQ==
   dependencies:
     mitt "^3.0.1"
     zod "^3.24.1"
@@ -1168,10 +1168,10 @@ depd@~1.1.2:
   resolved "https://registry.yarnpkg.com/depd/-/depd-1.1.2.tgz#9bcd52e14c097763e749b274c4346ed2e560b5a9"
   integrity sha512-7emPTl6Dpo6JRXOXjLRxck+FlLRX5847cLKEn00PLAgc3g2hTZZgr+e4c2v6QpSmLeFP3n5yUo7ft6avBK/5jQ==
 
-devtools-protocol@0.0.1464554:
-  version "0.0.1464554"
-  resolved "https://registry.yarnpkg.com/devtools-protocol/-/devtools-protocol-0.0.1464554.tgz#54d88398c99ad93fc81c35569fba9473b6e223d0"
-  integrity sha512-CAoP3lYfwAGQTaAXYvA6JZR0fjGUb7qec1qf4mToyoH2TZgUFeIqYcjh6f9jNuhHfuZiEdH+PONHYrLhRQX6aw==
+devtools-protocol@0.0.1475386:
+  version "0.0.1475386"
+  resolved "https://registry.yarnpkg.com/devtools-protocol/-/devtools-protocol-0.0.1475386.tgz#5378401a2c5698ab68c3482c9b7816ff62ec652b"
+  integrity sha512-RQ809ykTfJ+dgj9bftdeL2vRVxASAuGU+I9LEx9Ij5TXU5HrgAQVmzi72VA+mkzscE12uzlRv5/tWWv9R9J1SA==
 
 diff@^4.0.1:
   version "4.0.2"
@@ -3086,15 +3086,15 @@ punycode@^2.1.0:
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.3.1.tgz#027422e2faec0b25e1549c3e1bd8309b9133b6e5"
   integrity sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==
 
-puppeteer-core@^24.14.0:
-  version "24.14.0"
-  resolved "https://registry.yarnpkg.com/puppeteer-core/-/puppeteer-core-24.14.0.tgz#c2e3e80649b6a0c2855c3dae09c794c981c686d6"
-  integrity sha512-NO9XpCl+i8oB0zJp81iPhzMo2QK8/JTj4ramSvTpGCo9CPCNo4AZ8qVOGpSgXzlcOfOT3VHOkzTfPo08GOE5jA==
+puppeteer-core@^24.16.0:
+  version "24.16.0"
+  resolved "https://registry.yarnpkg.com/puppeteer-core/-/puppeteer-core-24.16.0.tgz#17fb9571ca7bcdc95c58d8c0df8fc2d5bf323b09"
+  integrity sha512-tZ0tJiOYaDGTRzzr2giDpf8O/55JsoqkrafS1Xu4H6S8oP4eeL6RbZzY9OzjShSf5EQvx/zAc55QKpDqzXos/Q==
   dependencies:
     "@puppeteer/browsers" "2.10.6"
-    chromium-bidi "7.1.1"
+    chromium-bidi "7.2.0"
     debug "^4.4.1"
-    devtools-protocol "0.0.1464554"
+    devtools-protocol "0.0.1475386"
     typed-query-selector "^2.12.0"
     ws "^8.18.3"
 
@@ -4196,10 +4196,10 @@ textlint@14.8.4:
     unique-concat "^0.2.2"
     zod "^3.25.56"
 
-tmp@^0.2.3:
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/tmp/-/tmp-0.2.3.tgz#eb783cc22bc1e8bebd0671476d46ea4eb32a79ae"
-  integrity sha512-nZD7m9iCPC5g0pYmcaxogYKggSfLsdxl8of3Q/oIbqCqLLIO9IAF0GWjX1z9NZRHPiXv8Wex4yDCaZsgEw0Y8w==
+tmp@^0.2.5:
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/tmp/-/tmp-0.2.5.tgz#b06bcd23f0f3c8357b426891726d16015abfd8f8"
+  integrity sha512-voyz6MApa1rQGUxT3E+BK7/ROe8itEx7vD8/HEvt4xwXucvQ5G5oeEiHkmHZJuBO21RpOf+YYm9MOivj709jow==
 
 to-regex@^3.0.2:
   version "3.0.2"
