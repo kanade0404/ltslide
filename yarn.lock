@@ -215,11 +215,6 @@
     sentence-splitter "^5.0.0"
     textlint-rule-helper "^2.3.1"
 
-"@textlint/ast-node-types@14.8.4":
-  version "14.8.4"
-  resolved "https://registry.yarnpkg.com/@textlint/ast-node-types/-/ast-node-types-14.8.4.tgz#2f2e1988bfce3613c14de114503cefa7c7cb5108"
-  integrity sha512-+fI7miec/r9VeniFV9ppL4jRCmHNsTxieulTUf/4tvGII3db5hGriKHC4p/diq1SkQ9Sgs7kg6UyydxZtpTz1Q==
-
 "@textlint/ast-node-types@15.8.0":
   version "15.8.0"
   resolved "https://registry.yarnpkg.com/@textlint/ast-node-types/-/ast-node-types-15.8.0.tgz#8454e68b08ff356557da72b1e17f6e9ee786869f"
@@ -353,22 +348,6 @@
     table "^6.9.0"
     text-table "^0.2.0"
 
-"@textlint/markdown-to-ast@14.8.4":
-  version "14.8.4"
-  resolved "https://registry.yarnpkg.com/@textlint/markdown-to-ast/-/markdown-to-ast-14.8.4.tgz#532aaafc98bf83c756e70a90232ddcc669afecfc"
-  integrity sha512-9x7xqpk//79nREP4Hb219UG3N3lERNorlhXOl1XX4A0y8BcDAKKDv70WftkF9VZ+sx4ys4dv/iOsBA29I0nNQA==
-  dependencies:
-    "@textlint/ast-node-types" "14.8.4"
-    debug "^4.4.1"
-    mdast-util-gfm-autolink-literal "^0.1.3"
-    neotraverse "^0.6.18"
-    remark-footnotes "^3.0.0"
-    remark-frontmatter "^3.0.0"
-    remark-gfm "^1.0.0"
-    remark-parse "^9.0.0"
-    structured-source "^4.0.0"
-    unified "^9.2.2"
-
 "@textlint/markdown-to-ast@15.8.0":
   version "15.8.0"
   resolved "https://registry.yarnpkg.com/@textlint/markdown-to-ast/-/markdown-to-ast-15.8.0.tgz#d827b78199e2ab8a69d2f3e47a4e5fd9dcc23665"
@@ -467,14 +446,6 @@
   dependencies:
     "@textlint/ast-node-types" "^13.4.1"
 
-"@textlint/textlint-plugin-markdown@14.8.4":
-  version "14.8.4"
-  resolved "https://registry.yarnpkg.com/@textlint/textlint-plugin-markdown/-/textlint-plugin-markdown-14.8.4.tgz#c7e89300d99898423f38632f76b047770829f6c6"
-  integrity sha512-WWFo05mIsXaJPrWiR/nsvaLd/nUS0xWWeJg6AcpOkrxyIqH//PyTuQHD9sYpJkCFopWP1/8GeCba+a/m2llX4g==
-  dependencies:
-    "@textlint/markdown-to-ast" "14.8.4"
-    "@textlint/types" "14.8.4"
-
 "@textlint/textlint-plugin-markdown@15.8.0":
   version "15.8.0"
   resolved "https://registry.yarnpkg.com/@textlint/textlint-plugin-markdown/-/textlint-plugin-markdown-15.8.0.tgz#f56c651fb1c41299cc0dd965efdd1577768261ce"
@@ -504,13 +475,6 @@
   integrity sha512-z0p5B8WUfTCIRmhjVHFfJv719oIElDDKWOIZei4CyYkfMGo0kq8fkrYBkUR6VZ6gofHwc+mwmIABdUf1rDHzYA==
   dependencies:
     "@textlint/text-to-ast" "^13.4.1"
-
-"@textlint/types@14.8.4":
-  version "14.8.4"
-  resolved "https://registry.yarnpkg.com/@textlint/types/-/types-14.8.4.tgz#8d7dfb32cba33a0d5b213ea19aed0b6e9f61b21f"
-  integrity sha512-9nyY8vVXlr8hHKxa6+37omJhXWCwovMQcgMteuldYd4dOxGm14AK2nXdkgtKEUQnzLGaXy46xwLCfhQy7V7/YA==
-  dependencies:
-    "@textlint/ast-node-types" "14.8.4"
 
 "@textlint/types@15.8.0":
   version "15.8.0"
@@ -1035,13 +999,6 @@ debug@^4.0.0, debug@^4.3.4:
   version "4.3.7"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.7.tgz#87945b4151a011d76d95a198d7111c865c360a52"
   integrity sha512-Er2nc/H7RrMXZBFCEim6TCmMk02Z8vLC2Rbi1KEBggpo0fS6l0S1nnapwmIi3yW/+GOJap1Krg4w0Hg80oCqgQ==
-  dependencies:
-    ms "^2.1.3"
-
-debug@^4.4.1:
-  version "4.4.1"
-  resolved "https://registry.yarnpkg.com/debug/-/debug-4.4.1.tgz#e5a8bc6cbc4c6cd3e64308b0693a3d4fa550189b"
-  integrity sha512-KcKCqiftBJcZr++7ykoDIEwSa3XWowTfNPo92BYxjXiyYEVrUQh2aLyhxBCwww+heortUFxEJYcRzosstTEBYQ==
   dependencies:
     ms "^2.1.3"
 
