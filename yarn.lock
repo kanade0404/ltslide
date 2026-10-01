@@ -128,10 +128,10 @@
   resolved "https://registry.yarnpkg.com/@keyv/serialize/-/serialize-1.1.1.tgz#0c01dd3a3483882af7cf3878d4e71d505c81fc4a"
   integrity sha512-dXn3FZhPv0US+7dtJsIi2R+c7qWYiReoEh5zUntWCf4oSpMNib8FDhSoed6m3QyZdx5hK7iLFkYk3rNxwt8vTA==
 
-"@marp-team/marp-cli@4.5.0":
-  version "4.5.0"
-  resolved "https://registry.yarnpkg.com/@marp-team/marp-cli/-/marp-cli-4.5.0.tgz#a6617322e608abc07fdb964d1c4ba9901fd53fd2"
-  integrity sha512-ZOd9eVwxqx1yL6S6OpEkYKnOTeeWbVCSJaOx8e5lUCcA8jGf7NJU2XkDMkvDTk0wvxwhIdda8zriunhau+Gmrg==
+"@marp-team/marp-cli@4.5.1":
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/@marp-team/marp-cli/-/marp-cli-4.5.1.tgz#04e6e3db675854960f3ba389a6b0e6620f257479"
+  integrity sha512-KwjfXZpABRjSivsHOD0pIsOmODxgQFwc3AHjlnFUKCsSZX5U4erHmm4GWd1K7l2NATLvtrGw29At89Tar/cS4g==
   dependencies:
     "@marp-team/marp-core" "^4.4.0"
     "@marp-team/marpit" "^3.2.2"
@@ -140,7 +140,7 @@
     puppeteer-core "^24.43.1"
     serve-index "^1.9.2"
     tmp "^0.2.7"
-    ws "^8.21.0"
+    ws "^8.21.3"
 
 "@marp-team/marp-core@^4.4.0":
   version "4.4.0"
@@ -3782,10 +3782,15 @@ wrappy@1:
   resolved "https://registry.yarnpkg.com/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
   integrity sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==
 
-ws@^8.20.0, ws@^8.21.0:
+ws@^8.20.0:
   version "8.21.3"
   resolved "https://registry.yarnpkg.com/ws/-/ws-8.21.3.tgz#660b4faddb6a3e575c86e078126919961f4de4fc"
   integrity sha512-201TZ/kPWxoPr/OKWjquZR1SWKXcvxdH+e1xrx89b3YbmzLMFCLfnaG1HFIgWzJOEWZ7MvpK++odZufgYR50Rw==
+
+ws@^8.21.3:
+  version "8.22.0"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-8.22.0.tgz#40f16e1d7588ac0575041be5c49b8eb261c28e73"
+  integrity sha512-Ydggc987+RO0AnWtZ/7Wq9FtNvcrL1b/RO0ud9mWjUPgDrsAAwQSF51sm2hm1XofbU/4jkpGEsLFsZZxU+1DOg==
 
 xmldom-sre@0.1.31:
   version "0.1.31"
