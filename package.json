@@ -13,6 +13,10 @@
     "textlint-rule-preset-ja-technical-writing": "12.0.2",
     "textlint-rule-spellcheck-tech-word": "5.0.0"
   },
+  "resolutions": {
+    "basic-ftp": "6.2.3",
+    "katex": "0.18.2"
+  },
   "scripts": {
     "export:capi": "marp --allow-local-files --theme ./theme/gaia_custom.css -o conversion-api/conversion_api.pdf conversion-api/conversion_api.md"
   }
