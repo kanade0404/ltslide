@@ -725,10 +725,10 @@ bare-stream@^2.6.4:
   dependencies:
     streamx "^2.21.0"
 
-basic-ftp@6.2.4, basic-ftp@^5.0.2:
-  version "6.2.4"
-  resolved "https://registry.yarnpkg.com/basic-ftp/-/basic-ftp-6.2.4.tgz#de4ea436b766326194cb756e0f1086e5d969f89d"
-  integrity sha512-6ACKOQxSlv5xka4i03ujfncNr9qp5yZNK3u0+yUFTAU4HfG5AeztCC9+R1I9dm8oq+1vt4RZ7cIRTBrdHqL2mw==
+basic-ftp@6.2.5, basic-ftp@^5.0.2:
+  version "6.2.5"
+  resolved "https://registry.yarnpkg.com/basic-ftp/-/basic-ftp-6.2.5.tgz#cb2a04e6ae1e961d2f832357dc99f3f4978eb87e"
+  integrity sha512-JJKYwxdbJM6Z4jFO+ciaIUejHRCyIg6oJ9hoAzuZ0EMlJsHDT07h6vZt4NH8G61DLzddrDKvjoRqfewnPzDSJA==
 
 batch@0.6.1:
   version "0.6.1"
